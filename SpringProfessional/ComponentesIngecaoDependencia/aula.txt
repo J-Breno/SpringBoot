@@ -1,0 +1,39 @@
+Sistema é composto de componentes
+
+Os componentes devem ser :
+- Coesos (responsabilidade clara e única)
+- Desaclopados entre si - 
+Objetivos
+- Flexbilidade
+- Manutenção
+- Reaproveitamento
+
+* Inversão de controle
+
+Se um componente A depende de B, A não deve ter o controle sobre esta dependência (B);
+Por que? Porque se for preciso trocar a dependência (B), seria preciso tabém abrir o componente A;
+
+É preciso "inverter o controle", ou seja, o controle da dependência tem que ficar fora do componente A.
+
+* Injeção de dependência
+um componente não controla as suas dependências
+
+- Uma vez que um sistema usa o princípio da inversção de controle, quando um componente A depende do componente B, esta dependência (B) precisa ser "injetada" em A;
+
+- Em sistema de software, essa "injeção de dependência" pode ser feita de várias formas: 
+	- Construtor
+	- Método set
+	- Container de injeção de dependência		
+
+* FRAMEWORK
+
+- Tradução ao pé da letra: estrutura, armação, estrutura de trabalho
+- è um conjunto de ferramentas que oferece uma infraestrutura para se desenvolver sistema de forma produtiva
+
+- Um frameworks gerencia:
+	- Injeção de dependência
+	- Transações (back end)
+	- Ciclo de vida, escopo e reaproveitamento de componentes
+	- Configurações 
+	- Integrações
+	- Outros
